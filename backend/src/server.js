@@ -5,12 +5,24 @@ require("dotenv").config();
 const { extractClaims } = require("./extractor");
 const { checkAllClaims } = require("./checker");
 const { scoreAllClaims } = require("./scorer");
+const rateLimit = require("express-rate-limit");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({origin:"*"}));
 app.use(express.json());
+
+// uses rate-limit so that no user can misuse my api cradits 
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 10, // max 10 requests per IP
+  message: {
+    error: "Too many requests. The limit has been exceeded. Please try again after 15 minutes."
+  }
+});
+
+app.use("/check", limiter);
 
 app.get("/", (req, res) => {
   res.json({ message: "HalluciCheck API is running" });

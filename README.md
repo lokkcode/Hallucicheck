@@ -7,7 +7,7 @@
 [![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
  
 ---
- 
+
 ## 🧠 What Is HalluciCheck?
  
 HalluciCheck is a full-stack AI-powered tool that detects hallucinations in any AI-generated text — instantly and cheaply.
@@ -32,7 +32,17 @@ HalluciCheck runs at **~$0.002 per check** (vs industry standard $0.01+) by usin
 Big companies:  One big expensive model does everything → $0.01/check
 HalluciCheck:   Multiple cheap tools, each doing one job → $0.002/check
 ```
- 
+ ## 📸 Screenshots
+
+### Home Page
+<img width="1054" alt="Home Page" src="https://github.com/user-attachments/assets/ff5f81cf-b4c6-4e13-b407-17a7ec7a9d9e" />
+
+### Input With Text
+<img width="950" alt="Input Box" src="https://github.com/user-attachments/assets/4bd4c6c1-5e04-4345-ab11-c94467e36d71" />
+
+### Results Output
+<img width="866" alt="Output with scores" src="https://github.com/user-attachments/assets/0e542a30-7269-4b16-bd80-5b30b9664aef" />
+
 ---
  
 ## ⚙️ How It Works

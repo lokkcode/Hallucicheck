@@ -34,6 +34,8 @@ function App() {
     try {
       const response = await axios.post(`${API_URL}/check`, {
         text: text,
+      },{
+        timeout:60000
       });
       setResult(response.data.data);
     } catch (err) {

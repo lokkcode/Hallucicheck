@@ -36,7 +36,7 @@ const scoreClaim = async (claim, evidence) => {
   `;
 
   const response = await groq.chat.completions.create({
-    model: "qwen-qwq-32b",
+    model: "llama-3.1-8b-instant",
     messages: [
       {
         role: "user",

@@ -18,7 +18,7 @@ Paste any output from **ChatGPT, Gemini, Claude, or any LLM** → HalluciCheck b
  
 ## 🚀 Live Demo
  
-🔗 **[hallucicheck.vercel.app](https://hallucicheck-50liemb9a-alok41n42-3670s-projects.vercel.app/)**
+🔗 **[hallucicheck.vercel.app](https://hallucicheck.vercel.app/)**
  
 ---
  
